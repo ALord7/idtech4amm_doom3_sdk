@@ -87,14 +87,6 @@ jobs:
           ./gradlew clean -Pabifilters=armeabi-v7a
           echo "apk=${apk_file}" >> $GITHUB_OUTPUT
 
-      - name: Delete tag and release
-        uses: dev-drprasad/delete-tag-and-release@v1.1
-        with:
-          tag_name: android_apk_bloodmod
-          delete_release: false
-          repo: ALord7/idtech4amm_doom3_sdk
-          github_token: ${{ secrets.TOKEN }}
-
       - name: Get release date time
         id: release_datetime
         uses: Kaven-Universe/github-action-current-date-time@v1
