@@ -92,7 +92,7 @@ jobs:
         with:
           tag_name: android_apk_bloodmod
           delete_release: false
-          repo: ALord7/idtech4amm_doom3_sdk
+          repo: ALord7/idtech4amm_doom3_sdk/tree/bloodmod
           github_token: ${{ secrets.TOKEN }}
 
       - name: Get release date time
